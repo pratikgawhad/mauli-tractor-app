@@ -1,0 +1,65 @@
+/* Custom Styles for Mauli Tractor App */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Print Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .print\:border-0 {
+    border: none !important;
+  }
+  
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+  
+  .border-2 {
+    border: 2px solid #000 !important;
+  }
+  
+  .border-gray-800 {
+    border-color: #1f2937 !important;
+  }
+  
+  .text-green-800 {
+    color: #065f46 !important;
+  }
+  
+  .text-gray-600 {
+    color: #4b5563 !important;
+  }
+}
